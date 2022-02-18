@@ -71,10 +71,10 @@ function Book(title, author, isbn, del) {
 document.getElementById("book-list").addEventListener("click", (e) => {
     ui.removeBookFromList(e.target);
 
-    ui.showAlert('Book Removed', 'success');
+    // ui.showAlert('Book Removed', 'success');
   })
 
-  e.preventDefault();
+ e.preventDefault();
   });
 
 
