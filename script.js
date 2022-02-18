@@ -42,6 +42,7 @@ function Book(title, author, isbn, del) {
     setTimeout(function () {
       document.querySelector(".alert").remove();
     }, 3000);
+
   };
   
   UI.prototype.clearFields = function () {
@@ -69,6 +70,8 @@ function Book(title, author, isbn, del) {
 
 document.getElementById("book-list").addEventListener("click", (e) => {
     ui.removeBookFromList(e.target);
+
+    ui.showAlert('Book Removed', 'success');
   })
 
   e.preventDefault();
